@@ -4,8 +4,8 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="author" content="NETOPIA System" />
-<meta http-equiv="copyright" content="(c)2007-2009 N E T O P I A System" />
+<meta http-equiv="author" content="NETOPIA" />
+<meta http-equiv="copyright" content="(c)NETOPIA" />
 <meta http-equiv="rating" content="general" />
 <meta http-equiv="distribution" content="general" />
 <link href="http://www.mobilpay.ro/assets/themes/public/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -84,7 +84,7 @@ catch(Exception $e)
 	<br/>
 	<strong>Cost 0.05 Euro + TVA</strong>
 	<br/>
-	<strong>Plata va fi realizata prin portalul de plati securizat mobilpay.ro</strong>
+	<strong>Plata va fi realizata prin portalul de plati securizat mobilPay.ro</strong>
 	<br/>
 	<form action="<?php echo $paymentUrl;?>" method="post" name="frmPaymentRedirect">
 		<input type="hidden" name="env_key" value="<?php echo $objPmReqSms->getEnvKey();?>" />
