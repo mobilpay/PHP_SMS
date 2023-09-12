@@ -2,7 +2,7 @@
 /**
  * Class Mobilpay_Payment_Request_Sms
  * This class can be used for accessing mobilpay.ro payment interface for your configured online services
- * @copyright NETOPIA
+ * @copyright NETOPIA System
  * @author Claudiu Tudose
  * @version 1.0
  * 
@@ -128,6 +128,13 @@ class Mobilpay_Payment_Request_Sms extends Mobilpay_Payment_Request_Abstract
 		$xmlElem			= $this->_xmlDoc->createElement('signature');
 		$xmlElem->nodeValue	= $this->signature;
 		$rootElem->appendChild($xmlElem);
+
+		if($this->ipnCipher !== null)
+		{
+			$xmlElem = $this->_xmlDoc->createElement('ipn_cipher');
+			$xmlElem->nodeValue = $this->ipnCipher;
+			$rootElem->appendChild($xmlElem);	
+		}
 		
 		$xmlElem			= $this->_xmlDoc->createElement('service');
 		$xmlElem->nodeValue	= $this->service;
