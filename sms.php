@@ -46,7 +46,7 @@ require_once 'Mobilpay/Payment/Request/Abstract.php';
 require_once 'Mobilpay/Payment/Request/Sms.php';
 
 #adresa catre care se face redirectarea la plata (test/productie)
-$paymentUrl = 'http://sandboxsecure.mobilpay.ro';
+$paymentUrl = 'https://sandboxsecure.mobilpay.ro';
 //$paymentUrl = 'https://secure.mobilpay.ro';
 
 #calea catre certificatul public 
