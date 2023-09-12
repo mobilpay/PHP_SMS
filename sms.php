@@ -89,6 +89,8 @@ catch(Exception $e)
 	<form action="<?php echo $paymentUrl;?>" method="post" name="frmPaymentRedirect">
 		<input type="hidden" name="env_key" value="<?php echo $objPmReqSms->getEnvKey();?>" />
 		<input type="hidden" name="data" value="<?php echo $objPmReqSms->getEncData();?>" />
+		<input type="hidden" name="cipher" value="<?php echo $objPmReqSms->getCipher();?>" /> 
+		<input type="hidden" name="iv" value="<?php echo $objPmReqSms->getIv();?>" /> 
 		<input type="image" src="images/12792_mobilpay-96x30.gif" />
 	</form>
 </p>
